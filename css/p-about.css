@@ -12,7 +12,7 @@
 @media screen and (max-width: 991px) {
   .p-about__img img {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     display: block;
   }
 }
@@ -38,7 +38,8 @@
 }
 
 .p-about__content {
-  transform: translateY(-4px);
+  height: 286.2px;
+  overflow: scroll;
 }
 
 .nav-tabs {

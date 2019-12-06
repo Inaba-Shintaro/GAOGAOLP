@@ -4,7 +4,7 @@ $(function() {
 
   jQuery(window).on("scroll", function() {
     if (jQuery(this).scrollTop() > navPos) {
-      jQuery("body").css("padding-top", 45.656); // グローバルメニューの高さ（縮んだ時の高さ）
+      jQuery("body").css("padding-top", 74); // グローバルメニューの高さ（縮んだ時の高さ）
       jQuery("#mainNav").addClass("m_fixed");
     } else {
       jQuery("body").css("padding-top", 0);
