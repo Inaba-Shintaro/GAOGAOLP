@@ -1,0 +1,22 @@
+@import "../../foundation/mixin";
+@import "../../foundation/variable";
+
+//bg-black
+.p-bg-black {
+  &__primary {
+    background-color: $colorBlack;
+    height: 810px;
+    margin-top: 182px;
+  }
+
+  &__transparent {
+    background-color: transparent;
+  }
+
+  &__secondary {
+    background-color: $colorBlack;
+    height: 454px;
+    margin-top: 98.7px;
+    margin-bottom: -400px;
+  }
+}

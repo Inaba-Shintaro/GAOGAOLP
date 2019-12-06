@@ -1,0 +1,16 @@
+.p-bg-black__primary {
+  background-color: #212529;
+  height: 810px;
+  margin-top: 182px;
+}
+
+.p-bg-black__transparent {
+  background-color: transparent;
+}
+
+.p-bg-black__secondary {
+  background-color: #212529;
+  height: 454px;
+  margin-top: 98.7px;
+  margin-bottom: -400px;
+}

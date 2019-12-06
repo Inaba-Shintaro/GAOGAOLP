@@ -1,0 +1,1 @@
+.p-nav__primary{display:none}@media screen and (max-width: 560px){.p-nav__primary{display:block}}@media screen and (max-width: 560px){.p-nav__secondary{display:none}}#mainNav.m_fixed{left:0;position:fixed;top:0;width:100%;z-index:999}

@@ -1,0 +1,15 @@
+.p-contact {
+  background-image: url(/img/mainportfolio/img-protfolio-bg.JPG) !important;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.p-contact .p-contactInner {
+  background-color: #212529;
+}
+
+@media screen and (max-width: 991px) {
+  .p-contact .p-contactInner__sectionTtl {
+    margin-bottom: 30px;
+  }
+}

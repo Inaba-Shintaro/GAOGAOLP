@@ -1,0 +1,25 @@
+@import "../../foundation/mixin";
+@import "../../foundation/variable";
+
+.p-nav {
+  &__primary {
+    display: none;
+
+    @include mq("sp") {
+      display: block;
+    }
+  }
+  &__secondary {
+    @include mq("sp") {
+      display: none;
+    }
+  }
+}
+
+#mainNav.m_fixed {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; //短くなちゃうので調整
+  z-index: 999; //コレがないとしたのセクションの文字などがnavの手前に来てしまう
+}

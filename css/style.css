@@ -1,0 +1,17 @@
+body {
+  background: linear-gradient(270deg, #29a00b, #ef5c48) !important;
+  background-size: 200% 200% !important;
+
+  animation: AnimationName 7s ease infinite !important;
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 5%;
+  }
+  50% {
+    background-position: 100% 96%;
+  }
+  100% {
+    background-position: 0% 5%;
+  }
+}

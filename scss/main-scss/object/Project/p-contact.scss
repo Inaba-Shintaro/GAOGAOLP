@@ -1,0 +1,18 @@
+@import "../../foundation/mixin";
+@import "../../foundation/variable";
+
+.p-contact {
+  background-image: url(/img/mainportfolio/img-protfolio-bg.JPG) !important;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .p-contactInner {
+    background-color: $colorBlack;
+
+    &__sectionTtl {
+      @include mq("tab") {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

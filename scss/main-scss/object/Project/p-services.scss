@@ -1,0 +1,33 @@
+@import "../../foundation/mixin";
+@import "../../foundation/variable";
+
+.p-services {
+  background-color: transparent;
+
+  &__content {
+    @include mq("tab") {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__txt {
+    &__description {
+      @include mq("tab") {
+        text-align: center;
+      }
+    }
+  }
+
+  &__swiper {
+    .p-services__swiperContainer {
+      .p-services__swiperWrapper {
+        &__slide {
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

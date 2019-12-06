@@ -1,0 +1,49 @@
+.p-about {
+  background-image: url(/img/mainportfolio/img-protfolio-bg.JPG);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 84px 10px;
+}
+
+.p-about__img img {
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .p-about__img img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.p-about__panel__heading {
+  margin: 0 auto;
+  width: 36.5%;
+}
+
+@media screen and (max-width: 576px) {
+  .p-about__panel__heading {
+    width: 70.5%;
+  }
+}
+
+.p-about__tabs li a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.p-about__tabs li a:checked {
+  color: #fed136;
+}
+
+.p-about__content {
+  transform: translateY(-4px);
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #dee2e6;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}

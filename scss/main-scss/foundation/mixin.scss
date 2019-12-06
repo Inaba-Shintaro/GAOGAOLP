@@ -1,0 +1,67 @@
+//----------------------------------------------------------------//
+//---------------------------【 mq 】-----------------------------//
+//----------------------------------------------------------------//
+
+//ブレイクポイント設定はここでやる
+$breakpointSpAndTab: 576px; //spとtabのブレイクポイント
+$breakpointTabAndPc: 992px; //tabとpcのブレイクポイント
+
+// それをまとめる
+$breakpoints: (
+  "sp": "screen and (max-width: #{$breakpointSpAndTab} )",
+  "tab": "screen and (max-width: #{$breakpointTabAndPc - 1px})",
+  "pc": "screen and (min-width: #{$breakpointTabAndPc})"
+);
+
+// ほいでそれの@mixin  ここが呼び出される
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+//----------------------------------------------------------------//
+//---------------------------【 display 】-------------------------//
+//----------------------------------------------------------------//
+
+//flex
+@mixin displayFlex($justifyContent) {
+  display: flex;
+  justify-content: $justifyContent;
+}
+
+//tabel
+@mixin displayTable() {
+  display: table;
+  text-align: center; /* 左右中央 */
+  text-decoration: none;
+  width: 100%;
+}
+
+//table-cell
+@mixin displayTabelCell($fontColor) {
+  color: $fontColor;
+  display: table-cell;
+  vertical-align: middle; /* 上下中央 */
+}
+
+//----------------------------------------------------------------//
+//---------------------------【 margin: 0 auto 】------------------//
+//----------------------------------------------------------------//
+
+@mixin margin0Auto($elementWidth) {
+  width: $elementWidth;
+  margin: 0 auto;
+}
+
+//----------------------------------------------------------------//
+//---------------------------【 hover 】---------------------------//
+//----------------------------------------------------------------//
+
+@mixin hover {
+  &:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+}

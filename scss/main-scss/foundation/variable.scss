@@ -1,0 +1,41 @@
+//----------------------------------------------------------------//
+//----------------------------【 inner-width 】--------------------//
+//----------------------------------------------------------------//
+
+$innerWidthLarge: 86.383%; //1180px
+$innerWidthMedium: 71.278%; //960px
+$innerWidthsp: 91.466%; //sp時のInner幅
+
+//----------------------------------------------------------------//
+//---------------------------【 font-size 】----------------------//
+//----------------------------------------------------------------//
+
+//英語
+$HeadingSizeLargeEn: 38px;
+$HeadingSizeMediumEn: 40px;
+$HeadingSizeSmallEn: 20px;
+$FontSizeMediumEn: 18px;
+$FontSizeSmallEn: 14px;
+
+//日本語
+$HeadingSizeLargeJa: 30px;
+$HeadingSizeMediumJa: 28px;
+$HeadingSizeSmallJa: 20px;
+$FontSizeMediumJa: 16px;
+$FontSizeSmallJa: 12px;
+
+//----------------------------------------------------------------//
+//----------------------------【 color 】-------------------------//
+//----------------------------------------------------------------//
+
+//フォントカラー
+$fontColorBlack: #212529;
+$fontColorWhite: #ffffff;
+
+//キーカラー
+$colorLightwhite: #f3f3f3;
+$colorBlack: $fontColorBlack;
+$colorWhite: $fontColorWhite;
+$colorYellow: #fed136;
+$colorBlue: #4973ff;
+$colorRed: #ff4646;

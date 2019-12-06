@@ -1,0 +1,51 @@
+@import "../../foundation/mixin";
+@import "../../foundation/variable";
+
+.p-about {
+  background-image: url(/img/mainportfolio/img-protfolio-bg.JPG);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 84px 10px;
+
+  &__img {
+    img {
+      width: 100%;
+
+      @include mq("tab") {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+  &__panel {
+    &__heading {
+      margin: 0 auto;
+      width: 36.5%;
+      @include mq("sp") {
+        width: 70.5%;
+      }
+    }
+  }
+  &__tabs {
+    li {
+      a {
+        display: inline-block;
+        margin-left: 10px;
+
+        &:checked {
+          color: $colorYellow;
+        }
+      }
+    }
+  }
+  &__content {
+    transform: translateY(-4px);
+  }
+}
+.nav-tabs {
+  border-bottom: 1px solid #dee2e6;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}

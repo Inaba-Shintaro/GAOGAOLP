@@ -1,0 +1,22 @@
+@import "../../foundation/mixin";
+@import "../../foundation/variable";
+.p-portfolio {
+  //height: 100vh;
+
+  .p-portfolioWrapper {
+    &__item {
+      margin-bottom: 40px;
+      opacity: 0.8;
+      transition: all 0.3s ease;
+
+      @include hover;
+      a {
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
